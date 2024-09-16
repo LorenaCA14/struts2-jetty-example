@@ -34,8 +34,13 @@
        <s:text name="form.toDate.message"/>
        <sx:datetimepicker id="dateTo" name="invoiceBean.dateTo" />
     </td>
-
   </tr>
+  <tr>
+      <td class="evenRow">
+         <s:text name="form.import.message"/>
+         <s:textfield id="import" name="invoiceBean.import" />
+      </td>
+    </tr>
   <tr>
     <td class="evenRow">
         <s:submit align="left" value="Enviar"/>
