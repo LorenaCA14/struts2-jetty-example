@@ -25,5 +25,8 @@ public class InvoiceAction extends ActionSupport  {
         if (invoiceBean.getSubject().isEmpty()) {
             addFieldError("invoiceBean.subject", "El concepto es obligatorio.");
         }
+        if (invoiceBean.getImporte()==null) {
+            addFieldError("invoiceBean.importe", "El importe es obligatorio.");
+        }
     }
 }

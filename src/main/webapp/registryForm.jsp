@@ -17,34 +17,29 @@
   <h1><s:text name="form.tittle.message"/></h1>
   <table>
   <tr>
-      <td class="evenRow">
+      <td>
         <s:fielderror fieldName = "invoiceBean.subject" />
-        <s:text name="form.subject.message"/>
-        <s:textfield id="subject" name="invoiceBean.subject"/>
+        <s:fielderror fieldName = "invoiceBean.importe" />
+        <nobr><s:text name="form.subject.message" /></nobr>
       </td>
+      <td class="evenRow"><s:textfield id="subject" name="invoiceBean.subject"/></td>
     </tr>
   <tr>
-      <td class="evenRow">
-        <s:text name="form.fromDate.message"/>
-        <sx:datetimepicker id="dateFrom" name="invoiceBean.dateFrom"/>
-      </td>
+      <td class="evenRow"><nobr><s:text name="form.fromDate.message" /></nobr></td>
+      <td class="evenRow"><sx:datetimepicker id="dateFrom" name="invoiceBean.dateFrom" displayFormat="dd/MM/yyyy"/></td>
     </tr>
   <tr>
-    <td class="evenRow">
-       <s:text name="form.toDate.message"/>
-       <sx:datetimepicker id="dateTo" name="invoiceBean.dateTo" />
-    </td>
+    <td class="evenRow"><nobr><s:text name="form.toDate.message"/></nobr></td>
+    <td class="evenRow"><sx:datetimepicker id="dateTo" name="invoiceBean.dateTo" displayFormat="dd/MM/yyyy"/></td>
   </tr>
   <tr>
-      <td class="evenRow">
-         <s:text name="form.import.message"/>
-         <s:textfield id="import" name="invoiceBean.import" />
+      <td class="evenRow"><nobr><s:text name="form.importe.message"/></nobr></td>
+      <td class="evenRow"><s:textfield id="import" name="invoiceBean.importe" />
       </td>
     </tr>
   <tr>
-    <td class="evenRow">
-        <s:submit align="left" value="Enviar"/>
-    </td>
+    <td class="evenRow"><s:submit align="left" value="Enviar"/></td>
+    <td class="evenRow"></td>
   </tr>
   </table>
 </s:form>
